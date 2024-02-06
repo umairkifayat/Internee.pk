@@ -1,4 +1,6 @@
-function submitForm() {
-    // Add your form submission logic here
-    alert('Form submitted successfully!');
-}
+setTimeout(() => {
+    window.location.href = 'education.html';
+    return
+}, 8000);
+
+// window.location = 'index.html'
