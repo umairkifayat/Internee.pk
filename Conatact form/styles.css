@@ -1,83 +1,81 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: #fff;
+/* Import Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Global styles */
+html, body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
-.form-container {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    animation: fadeIn 1s ease-in-out;
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    background-color: var(--secondary-color);
 }
 
-h2 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+:root {
+    --primary-color: #f8f208;
+    --primary-color-dark: #ee9821;
+    --secondary-color: #04091d;
+    --secondary-color-light: #0f1221;
+    --secondary-color-dark: #03060f;
+    --text-light: #94a3b8;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --gradient: linear-gradient(to right, var(--primary-color-dark), var(--primary-color));
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+/* Global styles with transition */
+* {
     box-sizing: border-box;
-    font-size: 16px;
-    color: #333;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
+    /* transition: all 0.5s ease-in-out; */
 }
 
-input:focus,
-textarea:focus {
-    background-color: #e6e6e6;
+/* Specific section container styles */
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-textarea {
-    resize: vertical;
+/* Header styles */
+.header {
+    position: relative;
+    background-color: var(--secondary-color-dark);
 }
 
-.submit-btn {
-    background-color: #3498db;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+.header__container {
+    padding-top: 10rem;
+    gap: 4rem;
 }
 
-.submit-btn:hover {
-    background-color: #2980b9;
+.header__image img {
+    max-width: 400px;
+    margin: auto;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+.header__content {
+    text-align: center;
+}
 
-    to {
-        opacity: 1;
-    }
+.header__content h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.header__content h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    transform: translateY(-40%);
+    line-height: 3.5rem;
+}
+
+.header__content p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
 }
