@@ -1,0 +1,24 @@
+/* src/style.css */
+/* Add your global styles here */
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Adjust logo size for smaller screens */
+    .logo {
+        width: 100px; /* Adjust width as needed */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}

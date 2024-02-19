@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/responsive.css">
+
     <title>Document</title>
 </head>
-<body>
 
-   <!-- ============= Navbar area start ==============  -->
-   <div class="flex justify-evenly items-center mt-[3%]">
+<body>  
+
+ <!-- ============= Navbar area start ==============  -->
+ <div class="flex justify-evenly items-center mt-[3%]  ">
     <div class="flex items-center">
-        <img src="./assets/logo.jpeg" alt="" width="25%">
-        <p><b class="text-green-500 text-3xl">Internee<b class="text-black">.pk</b></b> <br><b class="text-purple-600 text-[10px]">VIRTUAL INTERNSHIP PLATFORM</b> </p>
+        <img src="./assets/logo.jpeg" alt="" width="25%" class=" ">
+        <p><b class="text-green-500 text-3xl">Internee<b class="text-black">.pk</b></b> <br><b
+                class="text-[#8c52fe] text-[10px]">VIRTUAL INTERNSHIP PLATFORM</b> </p>
     </div>
-    <div class="flex  item-center gap-2">
+    <div class="menu flex  item-center gap-2 md:flex">
         <ul class="flex gap-6 items-center">
-            <li class="text-2xl"><a href="">Home</li></a>
-            <li class="text-2xl"><a href="">About</li></a>
-            <li class="text-2xl"><a href="">Contact</li></a>
-            <li class="text-2xl"><a href="">Internships </li></a>
-            <li class="text-2xl"><a href="">Contact</li></a>
-            <li class="text-2xl">LMS <sup>new</sup></li></a>
-            <li class="text-2xl"><a href="">Job <br> Portal <sup>coming <br> soon</sup></li></a>
+            <li class="text-2xl text-slate-500"><a href="#">Home</a></li>
+            <li class="text-2xl text-slate-500"><a href="#">About</a></li>
+            <li class="text-2xl text-slate-500"><a href="#">Contact</a></li>
+            <li class="text-2xl text-slate-500"><a href="#">Internships</a></li>
+            <li class="text-2xl text-slate-500"><a href="#">Contact</a></li>
+            <li class="text-2xl text-slate-500">LMS <sup>new</sup></li>
+            <li class="text-2xl text-slate-500"><a href="#">Job<br>Portal <sup>coming<br>soon</sup></a></li>
         </ul>
-        <button class="text-2xl">Internee <br> Portal</button>
+        <button class="text-xl bg-[#8c52fe]  text-white  h-[5%] p-2 rounded-2xl item-center">Internee <br> Portal</button>
     </div>
-   </div>
-   <!-- ============= Navbar area end ==============  -->
+    <div class="hamburger text-2xl lg:hidden">
+        <p>☰</p>
+    </div>
+</div>
+<!-- ============= Navbar area end ==============  -->
+<!-- =============  banner start ==============  -->
+<div class="relative">
+    <img src="./assets/hero.jpeg" alt="" class="h-1/2 w-full object-cover">
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-8 text-white">
+        <p class="text-lg md:text-2xl">Are you looking for your dream Internship ?</p>
+        <p class="text-lg md:text-2xl">Join <br> Internee.pk <br> now..!</p>
+        <p class="text-sm md:text-lg">Pakistan's Virtual Internship Platform Powered By TechvioChats</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Browse Internship</button>
+    </div>
+</div>
+
+<!-- =============  banner end ==============  -->
+
 
 </body>
+
 </html>
