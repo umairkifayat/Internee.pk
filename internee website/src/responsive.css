@@ -13,7 +13,8 @@
 
     /* Adjust logo size for smaller screens */
     .logo {
-        width: 100px; /* Adjust width as needed */
+        width: 100px;
+        /* Adjust width as needed */
     }
 }
 
@@ -21,4 +22,46 @@
     .hamburger {
         display: none;
     }
+}
+
+
+
+
+
+.circle-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.circle-content {
+    width: 150px;
+    /* Adjust as needed */
+    height: 150px;
+    /* Adjust as needed */
+    border-radius: 50%;
+    border: 10px solid #8c52fe;
+    /* Added border properties */
+    position: relative;
+    overflow: hidden;
+}
+
+.circle-number {
+    position: absolute;
+    width: 40px;
+    /* margin-top: 2px; */
+    height: 40px;
+    top: 20%;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #8c52fe;
+    transform: transfotm rotate(60deg);
+    /* Rotate the number by 45 degrees */
+    font-size: 20px;
+    /* Adjust as needed */
+    padding: 10px;
+    /* Added padding for better visibility */
 }
